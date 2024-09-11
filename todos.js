@@ -17,14 +17,10 @@ async function getTodoList(){
   const button = document.getElementById('todo-btn');
   button.addEventListener('click', () => addTodo());
   
-   // 提示：改使用 async await 寫法
   async function addTodo() {
     try{
       const todoInput = document.getElementById('todo-input').value;
       if (!todoInput) return;
-      // 提示：加入 try catch
-      // 提示：使用 SweetAlert2 有效呈現錯誤資訊
-      // 提示：將重複程式碼提取出來`
       const postTodoData = await apiPostTodo(todoInput, token);
       getTodoList();
     }catch(error){
@@ -42,5 +38,3 @@ async function getTodoList(){
   }
 
   getTodoList();
-  
-  // 提示：將重複程式碼提取出來

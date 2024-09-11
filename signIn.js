@@ -14,8 +14,5 @@ async function signIn(userData) {
     }catch(error){
       showMessage('error', error.response.data.message);
     }
-    // 提示：加入 try catch
-    // 提示：使用 SweetAlert2 有效呈現錯誤資訊
-    // 提示：函式一次只做一件事
   }
   signIn(userData);

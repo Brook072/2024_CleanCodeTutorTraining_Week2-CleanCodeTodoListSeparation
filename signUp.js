@@ -1,4 +1,3 @@
-// 提示：改使用 async await 寫法
 import { apiPostSignUp }from './apis.js'
 import { isEmptyField,showMessage }from './all.js'
 const userData = {
